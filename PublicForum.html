@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Public Forum</title>
+<meta charset="utf-8">
+<h1>Personal information<h1>
+</head>
+<body>
+    <h3>
+<form action="forum.php" autocomplete="on" method="GET" oninput="bmi.value=((w.value)/((h.value) * (h.value))).toFixed(1)" id="forum">
+    <table>
+        <tr>
+            <th>Your name:</th><td><input type="text box" name="Name" placeholder="your full name"></td>
+        </tr>
+        <tr>
+            <th>Birthday:</th><td><input type="date" name="birthday" placeholder="dd.mm.yyyy"></td>
+        </tr>
+        <tr>
+            <th>Height:</th>
+            <td>
+            <input name="height" type="range" id="h" min="0.5" max="2.5" value="1.6" step="0.01" oninput="h_output.value =h.value"><output id="h_output"></output> m
+        </td>
+        </tr>
+        <tr>   
+            <th>Weight:</th>
+            <td>
+            <input name="weight" type="range" id="w" min="10" max="300" value="170" step="1" oninput="w_output.value =w.value"><output id="w_output"></output> kg
+            </td>
+
+        </tr>
+        <tr>
+            <th>BMI:</th> 
+            <td><output name="bmi" for="w h"></output> </td>
+
+        </tr>
+        <tr>
+            <th>Favorite sports:</th><td>
+            <input type="checkbox" value="Ice hockey" name="sport[]">
+            <label for="sport"> Ice hockey </label>
+            <input type="checkbox" value="Golf" name="sport[]">
+            <label for="sport"> Golf </label>
+            <input type="checkbox" value="Football" name="sport[]">
+            <label for="sport"> Football </label>
+            <input type="checkbox" value="Tennis" name="sport[]">
+            <label for="sport"> Tennis </label>
+            <input type="checkbox" value="Volleyball" name="sport[]">
+            <label for="sport"> Volleyball </label></td>    
+        </tr>
+        <tr>
+            <th>Favorite color:</th><td><input type="color" name="favorite color"></td>
+        </tr>
+        <tr>
+            <th>Marital status:</th><td>
+            <input type="radio" id="married" name="status" value="married">
+            <label for="married"> Married</label>
+            <input type="radio" id="single" name="status" value="single">
+            <label for="single"> Single</label>
+            <input type="radio" id="engaged" name="status" value="engaged">
+            <label for="engaged"> Engaged</label>
+            <input type="radio" id="divorced" name="status" value="divorced">
+            <label for="divorced"> Divorced</label></td>
+        </tr>
+        <tr>
+            <th>Degree:</th><td>
+            <input list="degrees" name="degree" id="degree">
+            <datalist id="degrees">
+                <option value="None">
+                <option value="Elementary school">
+                <option value="Bachelor">
+                <option value="Master">
+                <option value="Professor">
+            </datalist></td>
+        </tr>
+        <tr>
+            <th>Email:</th><td><input type="email" name="email" placeholder="example@example.com"></td>
+        </tr>
+        <tr>
+            <th>Phone:</th><td><input type="tel" name="phone" placeholder="example:0443102232"></td>
+        </tr>
+        <tr>
+            <th>Home address:</th><td><input type="text" name="address" placeholder="your address"></td>
+        </tr>
+        <tr>
+            <th>Postal code:</th><td><input type="number" name="postcode" placeholder="example:65200"></td>
+        </tr>
+        <tr>
+            <th><label for="country">Country:</label></th>
+            <td><select name="country" id="country">
+                <option value="Finland">Finland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Russia">Russia</option>
+                <option value="Norway">Norway</option>
+                <option value="Other">Other</option>
+              </select></td>
+        </tr>
+        <tr>
+            <th>Comments:</th><td><textarea id="comments" name="comments" rows="5" cols="22" placeholder="something to add?"></textarea></td>
+            <label for="comments"></label>
+        </tr>
+        <tr>
+            <td><button type="submit" name="submit" value="Submit">Submit</button></td>
+        </tr>
+    </table>
+</form>
+</h3>
+
+</body>
+</html>

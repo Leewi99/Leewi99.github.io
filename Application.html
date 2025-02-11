@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Application</title>
+<h1>Application</h1>
+<style>
+    th, td {      padding: 5px;     text-align: left; }
+</style>
+</head>
+
+    <body>
+        <form action="results.php" autocomplete="on" method="GET" id="Application">
+   
+        <table>
+        <tr>
+            <th>First name:</th><td><input type="text" name="firstname" placeholder="your first name" required></td>
+        </tr>
+        <tr>
+            <th>Last name:</th><td><input type="text" name="lastname" placeholder="your last name" required></td>
+        </tr>
+        <tr>
+            <th>Job:</th><td><input type="text" name="job" placeholder="your job" required></td>
+        </tr>
+        <tr>
+            <th>Gross salary:</th><td><input type="number" name="grosssalary" placeholder="your gross salary" required></td>
+        </tr>
+        <tr>
+            <th>Tax rate:</th><td><input type="number" name="taxrate" placeholder="your tax rate (%)" required></td>
+        </tr>
+        <tr>
+            <th><input type="submit" name="Submit" value="Submit"></th>
+        </tr>
+        </table>
+    </body>
+</html>

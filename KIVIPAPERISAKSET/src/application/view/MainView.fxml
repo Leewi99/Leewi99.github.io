@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="400.0" spacing="30.0" styleClass="vbox" stylesheets="@application/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainViewController">
+   <children>
+      <Label fx:id="GameLabel" styleClass="label" text="Kivi-Paperi-Sakset">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="ValintaLabel" styleClass="label" text="Valitse Kivi, Paperi tai Sakset:" />
+      <Button fx:id="KiviButton" mnemonicParsing="false" onAction="#handleKiviClick" prefHeight="30.0" prefWidth="150.0" styleClass="button" text="Kivi" />
+      <Button fx:id="PaperiButton" mnemonicParsing="false" onAction="#handlePaperiClick" prefHeight="30.0" prefWidth="150.0" styleClass="button" text="Paperi" />
+      <Button fx:id="SaksetButton" mnemonicParsing="false" onAction="#handleSaksetClick" prefHeight="30.0" prefWidth="150.0" styleClass="button" text="Sakset" />
+      <Label fx:id="TulosLabel" styleClass="label" text="Tulos: -" />
+      <HBox alignment="TOP_CENTER" spacing="10.0" styleClass="hbox">
+         <Label styleClass="label" text="Pelaaja:">
+            <padding>
+               <Insets right="21.0" />
+            </padding>
+         </Label>
+         <ProgressBar fx:id="progressBar" prefWidth="200.0" styleClass="progress-bar" />
+      </HBox>
+      <HBox alignment="TOP_CENTER" spacing="10.0" styleClass="hbox">
+         <Label styleClass="label" text="Tietokone:" />
+         <ProgressBar fx:id="progressBar2" prefWidth="200.0" styleClass="progress-bar" />
+      </HBox>
+      <HBox alignment="TOP_CENTER" spacing="60.0" styleClass="hbox">
+         <Label fx:id="PelaajanValintaLabel" styleClass="label" text="Pelaaja: -" />
+         <Label fx:id="TietokoneenValintaLabel" styleClass="label" text="Tietokone: -">
+            <padding>
+               <Insets left="100.0" />
+            </padding></Label>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</VBox>
